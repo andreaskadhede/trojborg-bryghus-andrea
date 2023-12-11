@@ -8,6 +8,647 @@
 /* styling af body */
 body {
     font-family: 'Chicle', serif;
-    font-weight: 400;
+    font-weight: 300;
+    color: #595959;
     background-color: #fffff7;
 }
+
+p {
+  font-family: 'Minion Pro', 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+  color: #8bca86;
+  line-height: 50%;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** NAVBAR **************************************************************/
+/*************************************************************************************************************************************/
+
+
+
+  /* change height and width of the nav container */
+  nav {
+    background-color: #edfff7;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+  } 
+  
+  nav ul {
+    margin-right: 30px;
+  }
+
+  /* Style the logo */
+   .logo-nav {
+    height: 70px;
+  } 
+
+  .logo-nav-a {
+    margin-left: 15px;
+    line-height: 170px;
+  }
+  
+  /* Style the nav */
+   nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+  } 
+  
+  /* updating the style inside the nav */
+   nav ul li a, #a p {
+    color: #8bca86;
+    font-size: 2rem;
+    padding: 0 13px;
+    text-transform: uppercase;
+    margin-top: 55px;
+    cursor: pointer;
+    font-family: 'Chicle', serif;
+  }
+   
+  /* styling the label checkbtn class */
+  .checkbtn {
+    font-size: 30px;
+    color: #8bca86;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  
+   /* styling the input tag  */
+   #check {
+    display: none;
+  } 
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100px;
+    background-color: #edfff7;
+    z-index: 1;
+    width: 160px;
+    text-align: left;
+    right: 40px;
+  }
+
+  nav ul li ul li .dropdownpunkt {
+    line-height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  #a:hover .dropdown-content {
+    display: block;
+  }
+
+  
+
+/*************************************************************************************************************************************/
+/************************************************************** FORSIDE **************************************************************/
+/*************************************************************************************************************************************/
+
+#forside {
+  display: flex;
+  justify-content: center;
+  margin: 120px;
+  flex-wrap: wrap;
+  gap: 5rem 6%;
+}
+
+/***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
+.kampagne {
+  background-color: red;
+  padding: 6rem 5rem 4rem;
+  width: 100%;
+}
+
+.kampagne h2 {
+  font-size: 10rem;
+  width: 50%;
+  display: inline;
+}
+
+.kampagne a {
+  color: #8bca86;
+  display: inline;
+  font-size: 2.5rem;
+  font-variant: small-caps;
+}
+
+/***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
+
+.nyhed {
+  background-color: orange;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nyhed h2 {
+  font-size: 20rem;
+  color: #efeb5b;
+}
+
+/***************************************************************** TREDJE BOKS/CITAT ***************************************************************/
+
+.citat {
+  background-color: yellow;
+  text-align: center;
+  width: 100%;
+}
+
+.citat h2 {
+  font-size: 10rem;
+  line-height: 9rem;
+}
+
+/***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
+
+.varianter, .produktionen {
+  background-color: green;
+  width: 47%;
+  text-align: center;
+}
+
+.varianter h2, .produktionen h2 {
+  font-size: 8rem;
+  padding: 1rem 0;
+}
+
+.produktionen img {
+  width: 90%;
+}
+
+/***************************************************************** SJETTE BOKS/HISTORIEN BAG ***************************************************************/
+
+.historie {
+  background-color: purple;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.historie h2 {
+  font-size: 10rem;
+  line-height: 8rem;
+}
+
+.historie picture {
+  width: 30%;
+}
+
+.historie img {
+  width: 100%;
+}
+
+.historie a {
+  background-color: #b1d7e1;
+  color: #fffff7;
+  font-size: 1.5rem;
+  padding: 0.125rem 2rem;
+  border-radius: 15px;
+}
+
+/*************************************************************************************************************************************/
+/************************************************************** KAMPAGNE *************************************************************/
+/*************************************************************************************************************************************/
+
+#kampagne {
+  display: flex;
+  margin: 150px 13% 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#kampagne h1 {
+  font-size: 6.75rem;
+  line-height: 7rem;
+}
+
+#kampagne p {
+  font-size: 1.75rem;
+  padding: 10px;
+}
+
+#kampagne div {
+  background-color: #b1d7e1;
+  color: #fffff7;
+  font-size: 2.25rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+
+#kampagne input {
+  background-color: #b1d7e1;
+  line-height: 0.75rem;
+  width: 15rem;
+  border: none;
+  border-bottom: #fffff7 solid 3px;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** NYHED ***************************************************************/
+/*************************************************************************************************************************************/
+
+/*************************************************************************************************************************************/
+/************************************************************* PRODUKTION ************************************************************/
+/*************************************************************************************************************************************/
+
+#produktion {
+  display: flex;
+  margin: 120px 10% 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#produktion h1 {
+  font-size: 10rem;
+  padding: 2rem;
+}
+
+#produktion img {
+  width: 100%;
+}
+
+/*************************************************************************************************************************************/
+/*********************************************************** HISTORIEN BAG ***********************************************************/
+/*************************************************************************************************************************************/
+
+#historie {
+  display: flex;
+  margin: 120px 20% 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#historie section h1 {
+  font-size: 6rem;
+  margin: 15px 0 30px;
+  text-align: center;
+}
+
+#historie section p {
+  font-size: 1.75rem;
+  padding: 10px;
+}
+
+#vision, #mission {
+  border: solid #b1d7e1 15px;
+  width: 75%;
+  padding: 20px;
+  margin: 2rem;
+  text-align: center;
+}
+
+#vision h2, #mission h2 {
+  font-size: 2.5rem;
+
+  padding: 20px;
+}
+
+#vision p, #mission p {
+  font-size: 2rem;
+}
+
+/*************************************************************************************************************************************/
+/************************************************************* VARIANTER *************************************************************/
+/*************************************************************************************************************************************/
+
+#varianter {
+  display: flex;
+  margin: 150px 13% 30px;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5rem 5%;
+}
+
+#varianter img {
+  width: 100%;
+}
+
+.øl {
+  width: 30%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.øl h3 {
+  font-size: 5rem;
+  background-color: blue;
+  grid-column: 1;
+}
+
+.flaske {
+  background-color: red;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 2;
+}
+
+.dåse {
+  background-color: yellow;
+  grid-column: 1;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** FOOTER **************************************************************/
+/*************************************************************************************************************************************/
+
+footer {
+    padding: 20px 0 30px;
+    background-color: #edfff7;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#links-footer {
+    width: 100%;
+    font-size: 18px;
+    justify-items: center;
+    padding: 10px 0;
+}
+
+.logo-footer {
+    height: 30px;
+    opacity: 0.6;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer ul li a {
+    opacity: 0.6;
+    color: #8bca86;
+}
+
+footer ul li a:hover, .logo-footer:hover {
+    opacity: 1;
+}
+
+
+
+/*************************************************************************************************************************************/
+/*************************************************************** @MEDIA **************************************************************/
+/*************************************************************************************************************************************/
+
+
+/********************************************************** @MEDIA TIL NAVBAR **************************************************************/
+
+/* MEDIA TIL TABLET */
+@media (max-width: 821px) {  
+      .checkbtn {
+          display: block;
+          font-size: 2.5rem;
+      }
+  
+      nav ul {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #edfff7;
+          top: 80px;
+          left: 0;
+          text-align: center;
+          z-index: 5;
+      } 
+  
+      /* Style the logo */
+      .logo-nav {
+          height: 50px;
+      } 
+  
+      .logo-nav-a {
+          margin-left: 15px;
+          line-height: 100px;
+      }
+  
+      /* continue styling break-point 858px max */
+      #menu li {
+          display: block;
+          line-height: 1rem;
+      }
+
+      nav ul li a, #a p {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 0 13px;
+        margin-top: 0;
+      }
+
+      #menu {
+          left: 100%;
+          transition: all 0.75s;
+      }
+
+      .dropdown-content {
+        position: relative;
+        top: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+
+      .dropdown-content li {
+        line-height: 0.75rem;
+        margin-top: -20px;
+        margin-bottom: 10px;
+      }
+  
+      /* adding new selector #check:checked~ */
+      #check:checked ~ #menu {
+        left: 0;
+      }
+
+      nav {
+        height: 80px;
+      } 
+      
+      nav ul {
+        margin-right: 30px;
+      }
+    
+      /* Style the logo */
+      .logo-nav {
+        height: 50px;
+    } 
+    
+    .logo-nav-a {
+        line-height: 120px;
+    }
+  
+      /* styling the label checkbtn class */
+      .checkbtn {
+        font-size: 50px;
+        line-height: 80px;
+      }
+    }
+
+
+    /* MEDIA TIL MOBIL */
+    @media (max-width: 415px) {
+    nav {
+      height: 80px;
+    } 
+    
+    nav ul {
+      margin-right: 30px;
+    }
+  
+    /* Style the logo */
+    .logo-nav {
+      height: 50px;
+  } 
+  
+  .logo-nav-a {
+      line-height: 120px;
+  }
+
+    /* styling the label checkbtn class */
+    .checkbtn {
+      font-size: 50px;
+      line-height: 80px;
+    }
+    }
+
+
+/********************************************************** @MEDIA TIL FORSIDE **************************************************************/
+
+@media (max-width: 415px) {
+  #forside {
+    display: flex;
+    justify-content: center;
+    margin: 120px 5%;
+    flex-wrap: wrap;
+    gap: 5rem 6%;
+  }
+  
+  /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
+  .kampagne {
+    background-color: red;
+    padding: 6rem 5rem 4rem;
+    width: 100%;
+  }
+  
+  .kampagne h2 {
+    font-size: 5rem;
+    width: 50%;
+    display: inline;
+  }
+  
+  .kampagne a {
+    color: #8bca86;
+    display: inline;
+    font-size: 2.5rem;
+    font-variant: small-caps;
+  }
+  
+  /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
+  
+  .nyhed {
+    background-color: orange;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nyhed h2 {
+    font-size: 10rem;
+    color: #efeb5b;
+  }
+  
+  /***************************************************************** TREDJE BOKS/CITAT ***************************************************************/
+  
+  .citat {
+    background-color: yellow;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .citat h2 {
+    font-size: 5rem;
+    line-height: 9rem;
+  }
+  
+  /***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
+  
+  .varianter, .produktionen {
+    background-color: green;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .varianter h2, .produktionen h2 {
+    font-size: 4rem;
+    padding: 1rem 0;
+  }
+  
+  .produktionen img {
+    width: 90%;
+  }
+  
+  /***************************************************************** SJETTE BOKS/HISTORIEN BAG ***************************************************************/
+  
+  .historie {
+    background-color: purple;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+  
+  .historie h2 {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+  
+  .historie picture {
+    width: 30%;
+  }
+  
+  .historie img {
+    width: 100%;
+  }
+  
+  .historie a {
+    background-color: #b1d7e1;
+    color: #fffff7;
+    font-size: 1.5rem;
+    padding: 0.125rem 2rem;
+    border-radius: 15px;
+  }
+}
+/********************************************************** @MEDIA TIL KAMPAGNE **************************************************************/
+
+/********************************************************** @MEDIA TIL NYHED **************************************************************/
+
+/********************************************************** @MEDIA TIL PRODUKTION **************************************************************/
+
+/********************************************************** @MEDIA TIL HISTORIEN BAG **************************************************************/
+
+/********************************************************** @MEDIA TIL FOOTER **************************************************************/
