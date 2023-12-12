@@ -39,6 +39,7 @@ h1, h2, h3 {
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 5;
   } 
   
   nav ul {
@@ -62,7 +63,7 @@ h1, h2, h3 {
   } 
   
   /* updating the style inside the nav */
-   nav ul li a, #a p {
+   nav ul li a, .a {
     color: #8bca86;
     font-size: 2rem;
     padding: 0 13px;
@@ -109,7 +110,7 @@ h1, h2, h3 {
     font-size: 1.5rem;
   }
   
-  #a:hover .dropdown-content {
+  .a:hover .dropdown-content {
     display: block;
   }
 
@@ -263,9 +264,198 @@ h1, h2, h3 {
   border-bottom: #fffff7 solid 3px;
 }
 
+.baggrund img {
+  transform: rotate(20deg);
+}
+
 /*************************************************************************************************************************************/
 /*************************************************************** NYHED ***************************************************************/
 /*************************************************************************************************************************************/
+
+#nyhed {
+  margin: 150px 13% 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.indhold-nyhed {
+  display: grid;
+  grid-template-columns: 57% 19.5% 19.5%;
+  gap: 5rem 2%;
+}
+
+#nyhed h1 {
+  font-size: 10rem;
+  color: #efeb5b;
+  background-color: red;
+}
+
+#nyhed img {
+  width: 30px;
+}
+
+#tekst-nyhed {
+  background-color: orange;
+  text-align: left;
+}
+#daase-gul {
+  background-color: yellow;
+}
+
+#flaske-gul {
+  background-color: green;
+}
+
+#næringsindhold {
+  background-color: blue;
+  list-style: none;
+  text-align: left;
+}
+
+#ingredienser {
+  background-color: purple;
+  list-style: none;
+  text-align: left;
+}
+/*********************************************************** BAGGRUND ***********************************************************/
+
+#gul1 {
+  position: absolute;
+  height: 8rem;
+  left: -2rem;
+  top: 60rem;
+}
+
+#gul2 {
+  position: absolute;
+  height: 7rem;
+  right: 12rem;
+  top: 33rem;
+}
+
+#gul3 {
+  position: absolute;
+  height: 9rem;
+  right: 25rem;
+  top: 20px;
+}
+
+#gul4 {
+  position: absolute;
+  height: 5rem;
+  left: 3rem;
+  top: 20rem;
+}
+
+#gul5 {
+  position: absolute;
+  height: 8rem;
+  left: 25rem;
+  top: 90rem;
+}
+
+#gul6 {
+  position: absolute;
+  height: 8rem;
+  right: 0;
+  top: 87rem;
+}
+
+#gul7 {
+  position: absolute;
+  height: 9rem;
+  right: 25rem;
+  top: 90rem;
+}
+
+#gul8 {
+  position: absolute;
+  height: 7rem;
+  left: 25rem;
+  top: 50px;
+}
+
+#gul9 {
+  position: absolute;
+  height: 7rem;
+  left: 15rem;
+  top: 72rem;
+}
+
+#gul10 {
+  position: absolute;
+  height: 7rem;
+  right: 2rem;
+  top: 58rem;
+}
+
+#gul11 {
+  position: absolute;
+  height: 11rem;
+  right: 5rem;
+  top: 5rem;
+}
+
+#gul12 {
+  position: absolute;
+  height: 9rem;
+  left: 10rem;
+  top: 45rem;
+}
+
+#gul13 {
+  position: absolute;
+  height: 8rem;
+  right: 18rem;
+  top: 70rem;
+
+}
+
+#gul14 {
+  position: absolute;
+  height: 10rem;
+  left: 0rem;
+  top: 35rem;
+}
+
+#gul15 {
+  position: absolute;
+  height: 8rem;
+  right: 0rem;
+  top: 25rem;
+}
+
+#gul16 {
+  position: absolute;
+  height: 3.5rem;
+  left: 0rem;
+  top: 100px;
+}
+
+#gul17 {
+  position: absolute;
+  height: 8rem;
+  left: 0rem;
+  top: 85rem;
+}
+
+#gul18 {
+  position: absolute;
+  height: 7rem;
+  right: 40rem;
+  top: 46rem;
+  z-index: 1;
+}
+
+#gul19 {
+  position: absolute;
+  height: 7rem;
+  left: 40rem;
+  top: 68rem;
+  z-index: 1;
+}
+
 
 /*************************************************************************************************************************************/
 /************************************************************* PRODUKTION ************************************************************/
@@ -311,10 +501,12 @@ h1, h2, h3 {
 
 #vision, #mission {
   border: solid #b1d7e1 15px;
+  background-color: #fffff7;
   width: 75%;
   padding: 20px;
   margin: 2rem;
   text-align: center;
+  z-index: 2;
 }
 
 #vision h2, #mission h2 {
@@ -326,6 +518,146 @@ h1, h2, h3 {
 #vision p, #mission p {
   font-size: 2rem;
 }
+
+/*********************************************************** BAGGRUND ***********************************************************/
+
+#groen1 {
+  position: absolute;
+  height: 8rem;
+  left: -2rem;
+  top: 60rem;
+}
+
+#groen2 {
+  position: absolute;
+  height: 7rem;
+  right: 12rem;
+  top: 33rem;
+}
+
+#groen3 {
+  position: absolute;
+  height: 9rem;
+  right: 25rem;
+  top: 20px;
+}
+
+#groen4 {
+  position: absolute;
+  height: 5rem;
+  left: 3rem;
+  top: 20rem;
+}
+
+#groen5 {
+  position: absolute;
+  height: 8rem;
+  left: 25rem;
+  top: 90rem;
+}
+
+#groen6 {
+  position: absolute;
+  height: 8rem;
+  right: 0;
+  top: 87rem;
+}
+
+#groen7 {
+  position: absolute;
+  height: 9rem;
+  right: 25rem;
+  top: 90rem;
+}
+
+#groen8 {
+  position: absolute;
+  height: 7rem;
+  left: 25rem;
+  top: 50px;
+}
+
+#groen9 {
+  position: absolute;
+  height: 7rem;
+  left: 15rem;
+  top: 72rem;
+}
+
+#groen10 {
+  position: absolute;
+  height: 7rem;
+  right: 2rem;
+  top: 58rem;
+}
+
+#groen11 {
+  position: absolute;
+  height: 11rem;
+  right: 5rem;
+  top: 5rem;
+}
+
+#groen12 {
+  position: absolute;
+  height: 9rem;
+  left: 10rem;
+  top: 45rem;
+}
+
+#groen13 {
+  position: absolute;
+  height: 8rem;
+  right: 18rem;
+  top: 70rem;
+
+}
+
+#groen14 {
+  position: absolute;
+  height: 10rem;
+  left: 0rem;
+  top: 35rem;
+}
+
+#groen15 {
+  position: absolute;
+  height: 8rem;
+  right: 0rem;
+  top: 25rem;
+}
+
+#groen16 {
+  position: absolute;
+  height: 3.5rem;
+  left: 0rem;
+  top: 100px;
+}
+
+#groen17 {
+  position: absolute;
+  height: 8rem;
+  left: 0rem;
+  top: 85rem;
+}
+
+#groen18 {
+  position: absolute;
+  height: 7rem;
+  right: 40rem;
+  top: 46rem;
+  z-index: 1;
+}
+
+#groen19 {
+  position: absolute;
+  height: 7rem;
+  left: 40rem;
+  top: 68rem;
+  z-index: 1;
+}
+
+
 
 /*************************************************************************************************************************************/
 /************************************************************* VARIANTER *************************************************************/
@@ -420,119 +752,98 @@ footer ul li a:hover, .logo-footer:hover {
 /********************************************************** @MEDIA TIL NAVBAR **************************************************************/
 
 /* MEDIA TIL TABLET */
-@media (max-width: 821px) {  
-      .checkbtn {
-          display: block;
-          font-size: 2.5rem;
-      }
-  
-      nav ul {
-          position: fixed;
-          width: 100%;
-          height: 100vh;
-          background: #edfff7;
-          top: 80px;
-          left: 0;
-          text-align: center;
-          z-index: 5;
-      } 
-  
-      /* Style the logo */
-      .logo-nav {
-          height: 50px;
-      } 
-  
-      .logo-nav-a {
-          margin-left: 15px;
-          line-height: 100px;
-      }
-  
-      /* continue styling break-point 858px max */
-      #menu li {
-          display: block;
-          line-height: 1rem;
-      }
+@media (max-width: 820px) {  
+  .checkbtn {
+    font-size: 60px;
+    line-height: 110px;
+  }
 
-      nav ul li a, #a p {
-        font-size: 2rem;
-        line-height: 3rem;
-        padding: 0 13px;
-        margin-top: 0;
-      }
+  nav {
+    height: 110px;
+  } 
 
-      #menu {
-          left: 100%;
-          transition: all 0.75s;
-      }
-
-      .dropdown-content {
-        position: relative;
-        top: 1rem;
-        text-align: center;
-        width: 100%;
-      }
-
-      .dropdown-content li {
-        line-height: 0.75rem;
-        margin-top: -20px;
-        margin-bottom: 10px;
-      }
-  
-      /* adding new selector #check:checked~ */
-      #check:checked ~ #menu {
-        left: 0;
-      }
-
-      nav {
-        height: 80px;
-      } 
-      
-      nav ul {
-        margin-right: 30px;
-      }
-    
-      /* Style the logo */
-      .logo-nav {
-        height: 50px;
-    } 
-    
-    .logo-nav-a {
-        line-height: 120px;
-    }
-  
-      /* styling the label checkbtn class */
-      .checkbtn {
-        font-size: 50px;
-        line-height: 80px;
-      }
-    }
-
-
-    /* MEDIA TIL MOBIL */
-    @media (max-width: 415px) {
-    nav {
-      height: 80px;
-    } 
-    
-    nav ul {
-      margin-right: 30px;
-    }
-  
-    /* Style the logo */
-    .logo-nav {
-      height: 50px;
+  /* Style the logo */
+  .logo-nav {
+    height: 80px;
   } 
   
   .logo-nav-a {
-      line-height: 120px;
+    line-height: 180px;
   }
+  
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #edfff7;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    z-index: 5;
+  } 
+  
+      
+  /* continue styling break-point 858px max */
+  #menu li {
+    display: block;
+  }
+  
+  nav ul li a, .a {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0 13px;
+    margin-top: 0;
+  }
+  
+  #menu {
+    left: 100%;
+    transition: all 0.75s;
+  }
+  
+  .dropdown-content {
+    position: relative;
+    top: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .dropdown-content li {
+    line-height: 0.75rem;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+  
+  /* adding new selector #check:checked~ */
+  #check:checked ~ #menu {
+    left: 0;
+  }
+}
 
-    /* styling the label checkbtn class */
-    .checkbtn {
-      font-size: 50px;
-      line-height: 80px;
-    }
-    }
+/* MEDIA TIL MOBIL */
+@media (max-width: 415px) {
+  nav {
+    height: 80px;
+  }
+  
+  nav ul {
+    margin-right: 30px;
+  }
+  
+  /* Style the logo */
+  .logo-nav {
+    height: 50px;
+  } 
+  
+  .logo-nav-a {
+    line-height: 120px;
+  }
+  
+  /* styling the label checkbtn class */
+  .checkbtn {
+    font-size: 50px;
+    line-height: 80px;
+  }
+}
 
 
 /********************************************************** @MEDIA TIL FORSIDE **************************************************************/
