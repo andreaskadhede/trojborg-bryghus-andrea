@@ -348,12 +348,15 @@ h1, h2, h3 {
 
 #kampagne h1 {
   font-size: 6.75rem;
-  line-height: 7rem;
-}
+  line-height: 5rem;
+  margin: 10px;
+  z-index: 3;
+  background-color: #fffff7;}
 
 #kampagne p {
   font-size: 1.75rem;
   padding: 10px;
+  z-index: 3;
 }
 
 #kampagne div {
@@ -363,6 +366,8 @@ h1, h2, h3 {
   padding: 0.75rem 1.75rem;
   border-radius: 15px;
   margin-top: 2rem;
+  z-index: 3;
+  position: relative;
 }
 
 #kampagne input {
@@ -371,7 +376,171 @@ h1, h2, h3 {
   width: 15rem;
   border: none;
   border-bottom: #fffff7 solid 3px;
+  z-index: 3;
 }
+
+.baggrund-kampagne img {
+  width: 100%;
+  z-index: 1;
+}
+
+.baggrund-kampagne {
+  display: grid;
+  z-index: 1;
+  grid-template-columns: repeat(40, 2.5%);
+  grid-template-rows: repeat(15, 6.666666666666667%);
+  gap: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 30px;
+}
+
+.flaske1 {
+  grid-area: 2 / 7;
+  transform: rotate(13deg);
+}
+
+.flaske2 {
+  grid-area: 4 / 3;
+  transform: rotate(356deg);
+}
+
+.flaske3 {
+  grid-area: 8 / 4;
+  transform: rotate(14deg);
+}
+
+.flaske4 {
+  grid-area: 12 / 1;
+  transform: rotate(336deg);
+  justify-self: end;
+}
+
+.flaske5 {
+  grid-area: 13 / 9;
+  transform: rotate(17deg);
+  align-self: end;
+}
+
+.flaske6 {
+  grid-area: 12 / 28;
+  transform: rotate(348deg);
+}
+
+.flaske7 {
+  grid-area: 6 / 40;
+  transform: rotate(6deg);
+}
+
+.flaske8 {
+  grid-area: 11 / 34;
+  transform: rotate(18deg);
+}
+
+.flaske9 {
+  grid-area: 8 / 37;
+  transform: rotate(338deg);
+}
+
+.flaske10 {
+  grid-area: 1 / 39;
+  transform: rotate(28deg);
+}
+
+.flaske11 {
+  grid-area: 2 / 26;
+  transform: rotate(354deg);
+}
+
+.flaske12 {
+  grid-area: 1 / 34;
+  transform: rotate(351deg);
+}
+
+.flaske13 {
+  grid-area: 3 / 16;
+  transform: rotate(336deg);
+  align-self: center;
+}
+
+.flaske14 {
+  grid-area: 13 / 19;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
+.daase1 {
+  grid-area: 2 / 1;
+  transform: rotate(17deg);
+}
+
+.daase2 {
+  grid-area: 9 / 1;
+  transform: rotate(348deg);
+  align-self: center;
+}
+
+.daase3 {
+  grid-area: 12 / 5;
+  transform: rotate(23deg);
+}
+
+.daase4 {
+  grid-area: 13 / 13;
+  transform: rotate(337deg);
+}
+
+.daase5 {
+  grid-area: 14 / 24;
+  transform: rotate(10deg);
+}
+
+.daase6 {
+  grid-area: 11 / 31;
+  transform: rotate(15deg);
+  justify-self: end;
+}
+
+.daase7 {
+  grid-area: 10 / 36;
+  transform: rotate(31deg);
+  display: none;
+}
+
+.daase8 {
+  grid-area: 9 / 39;
+  transform: rotate(354deg);
+  display: none;
+}
+
+.daase9 {
+  grid-area: 3 / 21;
+  transform: rotate(13deg);
+}
+
+.daase10 {
+  grid-area: 2 / 30;
+  transform: rotate(3deg);
+}
+
+.daase11 {
+  grid-area: 2 / 12;
+  transform: rotate(354deg);
+  align-self: center;
+}
+
+.daase12 {
+  grid-area: 5 / 36;
+  transform: rotate(15deg);
+}
+
+.daase13 {
+  grid-area: 13 / 38;
+  transform: rotate(357deg);
+  align-self: start;
+}
+
 
 /*************************************************************************************************************************************/
 /*************************************************************** NYHED ***************************************************************/
@@ -441,7 +610,6 @@ h1, h2, h3 {
   width: 100%;
   height: 100%;
   top: 50px;
-  overflow: over;
 }
 
 #gul1 {
@@ -466,7 +634,6 @@ h1, h2, h3 {
 
 #gul4 {
   width: 250%;
-  transform: rotate(180deg);
   grid-column: 10;
   grid-row: 17;
   transform: rotate(146deg);
@@ -566,7 +733,7 @@ h1, h2, h3 {
 }
 
 #produktion h1 {
-  font-size: 10rem;
+  font-size: 8rem;
   padding: 2rem;
 }
 
@@ -580,7 +747,7 @@ h1, h2, h3 {
 
 #historie {
   display: flex;
-  margin: 120px 20% 30px;
+  margin: 120px 17% 30px;
   flex-direction: column;
   align-items: center;
 }
@@ -604,12 +771,11 @@ h1, h2, h3 {
   padding: 20px;
   margin: 2rem;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 #vision h2, #mission h2 {
   font-size: 2.5rem;
-
   padding: 20px;
 }
 
@@ -617,9 +783,13 @@ h1, h2, h3 {
   font-size: 2rem;
 }
 
-#tekst-historie {
+.tekst-laptop, .tekst-mobil, .tekst {
   background-color: #fffff7;
   z-index: 3;
+}
+
+.tekst-mobil {
+  display: none;
 }
 
 /*********************************************************** BAGGRUND ***********************************************************/
@@ -646,7 +816,6 @@ h1, h2, h3 {
 
 #groen4 {
   width: 250%;
-  transform: rotate(180deg);
   grid-column: 10;
   grid-row: 17;
   transform: rotate(146deg);
@@ -860,9 +1029,7 @@ footer ul li a:hover, .logo-footer:hover {
     text-align: center;
     z-index: 5;
   } 
-  
-      
-  /* continue styling break-point 858px max */
+
   #menu li {
     display: block;
   }
@@ -877,8 +1044,7 @@ footer ul li a:hover, .logo-footer:hover {
   #menu {
     left: 100%;
     transition: all 0.75s;
-    margin-top: 20px;
-    padding-top: 70px;
+    margin-top: 10px;
   }
   
   .dropdown-content {
@@ -918,6 +1084,10 @@ footer ul li a:hover, .logo-footer:hover {
   
   .logo-nav-a {
     line-height: 120px;
+  }
+
+  #menu {
+    margin-top: -5px;
   }
   
   /* styling the label checkbtn class */
@@ -1044,14 +1214,202 @@ footer ul li a:hover, .logo-footer:hover {
 }
 /********************************************************** @MEDIA TIL KAMPAGNE **************************************************************/
 
+@media (max-width: 1300px) {
+  .baggrund-kampagne img {
+    width: 125%;
+  }
+}
+
 /* MEDIA TIL TABLET */
 @media (max-width: 820px) {
 
+  #kampagne {
+    margin: 120px 16% 110px;
+  }
+  
+  #kampagne h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  
+  #kampagne p {
+    font-size: 1.25rem;
+    padding: 5px;
+  }
+  
+  #kampagne div {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  #kampagne input {
+    width: 10rem;
+  }
+  
+  .baggrund-kampagne {
+    grid-template-columns: repeat(30, 3.333333333333%);
+  }
+  
+  .flaske1 {
+    grid-area: 2 / 6;
+  }
+  
+  .flaske2 {
+    grid-area: 5 / 2;
+  }
+  
+  .flaske3 {
+    grid-area: 9 / 4;
+  }
+  
+  .flaske4 {
+    grid-area: 13 / 2;
+  }
+  
+  .flaske5 {
+    grid-area: 12 / 10;
+  }
+  
+  .flaske6 {
+    grid-area: 12 / 30;
+  }
+  
+  .flaske7 {
+    grid-area: 4 / 30;
+    transform: rotate(36deg);
+  }
+
+  .flaske9 {
+    grid-area: 9 / 28;
+  }
+  
+  .flaske11 {
+    grid-area: 1 / 25;
+    transform: rotate(334deg);
+  }
+
+  .flaske14 {
+    grid-area: 12 / 22;
+  }
+  
+  .daase1 {
+    grid-area: 3 / 1;
+  }
+  
+  .daase2 {
+    grid-area: 8 / 1;
+  }
+  
+  .daase4 {
+    grid-area: 12 / 16;
+  }
+  
+  .daase5 {
+    grid-area: 11 / 26;
+  }
+  
+  .daase6 {
+    grid-area: 1 / 19;
+  }
+  
+  .daase7 {
+    display: block;
+    grid-area: 14 / 13;
+    transform: rotate(13deg);
+  }
+  
+  .daase10 {
+    grid-area: 3 / 29;
+    transform: rotate(13deg);
+  }
+  
+  .daase12 {
+    grid-area: 7 / 29;
+    transform: rotate(346deg);
+    align-self: start;
+  }
+  
+  .daase13 {
+    grid-area: 13 / 27;
+    transform: rotate(327deg);
+    align-self: center;
+  }
+
+  .flaske8, .flaske10, .flaske12, .daase8 {
+    display: none;
+  }
 }
 
 /* MEDIA TIL MOBIL */
 @media (max-width: 415px) {
 
+  #kampagne {
+    margin: 120px 4% 120px;
+  }
+  
+  #kampagne h1 {
+    font-size: 3.5rem;
+  }
+  
+  #kampagne p {
+    margin: 0 4%;
+  }
+
+  .tekst-laptop {
+    display: none;
+  }
+
+  .tekst-mobil {
+    display: block;
+  }
+  
+  .flaske2 {
+    grid-area: 4 / 2;
+  }
+  
+  .flaske3 {
+    grid-area: 13 / 15;
+  }
+  
+  .flaske5 {
+    grid-area: 12 / 10;
+  }
+
+  .flaske9 {
+    grid-area: 9 / 29;
+  }
+  
+  .flaske11 {
+    grid-area: 2 / 25;
+    transform: rotate(334deg);
+  }
+
+  .flaske14 {
+    grid-area: 12 / 22;
+    transform: rotate(334deg);
+  }
+
+  .daase3 {
+    grid-area: 11 / 4;
+  }
+  
+  .daase4 {
+    grid-area: 12 / 16;
+  }
+  
+  .daase6 {
+    grid-area: 6 / 1;
+    transform: rotate(35deg);
+  }
+  
+  .daase11 {
+    transform: rotate(327deg);
+  }
+
+  .daase12 {
+    transform: rotate(336deg);
+  }
 }
 
 /********************************************************** @MEDIA TIL NYHED **************************************************************/
@@ -1070,12 +1428,29 @@ footer ul li a:hover, .logo-footer:hover {
 
 /* MEDIA TIL TABLET */
 @media (max-width: 820px) {
-
+  #produktion {
+    margin: 120px 5% 30px;
+  }
+  
+  #produktion h1 {
+    font-size: 5rem;
+    padding: 1rem;
+  }
 }
 
 /* MEDIA TIL MOBIL */
 @media (max-width: 415px) {
-
+  #produktion {
+    margin: 100px 3% 30px;
+  }
+  
+  #produktion h1 {
+    font-size: 4rem;
+  }
+  
+  #produktion img {
+    margin: 10px 0;
+  }
 }
 
 /********************************************************** @MEDIA TIL HISTORIEN BAG **************************************************************/
@@ -1176,35 +1551,21 @@ footer ul li a:hover, .logo-footer:hover {
   }
 
   .baggrund {
-    display: grid;
-    z-index: 1;
     grid-template-columns: repeat(10, 10%);
-    grid-template-rows: repeat(20, 5%);
-    gap: 0;
     position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 50px;
-    overflow: over;
   }
 
   #groen1 {
     width: 130%;
-    transform: rotate(20deg);
     grid-column: 9;
     grid-row: 8;
     justify-self: start;
-  }
-  
-  #groen2 {
-    display: none;
   }
   
   #groen3 {
     width: 120%;
     grid-column: 9;
     grid-row: 16;
-    transform: rotate(80deg);
   }
   
   #groen4 {
@@ -1231,10 +1592,8 @@ footer ul li a:hover, .logo-footer:hover {
   }
   
   #groen9 {
-    width: 100%;
     grid-column: 2;
     grid-row: 18;
-    transform: rotate(80deg);
   }
   
   #groen10 {
@@ -1246,7 +1605,7 @@ footer ul li a:hover, .logo-footer:hover {
   
   #groen12 {
     width: 150%;
-    grid-column: 8;
+    grid-column: 6;
     grid-row: 8;
   }
   
@@ -1257,28 +1616,13 @@ footer ul li a:hover, .logo-footer:hover {
     transform: rotate(200deg);
   }
   
-  #groen14 {
-    display: none;
-  }
-  
   #groen15 {
-    width: 100%;
     grid-column: 10;
     grid-row: 3;
-    justify-self: end;
-  }
-  
-  #groen16 {
-    display: none;
-  }
-  
-  #groen17 {
-    display: none;
   }
   
   #groen18 {
     width: 150%;
-    grid-column: 2;
     grid-row: 10;
     justify-self: end;
   }
@@ -1287,8 +1631,11 @@ footer ul li a:hover, .logo-footer:hover {
     width: 130%;
     grid-column: 1;
     grid-row: 5;
-    transform: rotate(20deg);
     justify-self: end;
+  }
+
+  #groen2, #groen14, #groen16, #groen17 {
+    display: none;
   }
 }
 
