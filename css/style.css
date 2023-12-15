@@ -122,71 +122,241 @@ nav ul li ul li .dropdownpunkt {
 #forside {
   display: flex;
   justify-content: center;
-  margin: 120px 10%;
+  margin: 80px 10%;
   flex-wrap: wrap;
-  gap: 5rem 6%;
+  gap: 5rem 2%;
 }
 
 /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
 
 .kampagne {
-  background-color: red;
-  padding: 6rem 5rem 4rem;
   width: 100%;
+  display: grid;
+  z-index: 1;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(20, 5%);
+  margin-top: 150px;
 }
 
 .kampagne h2 {
-  font-size: 10rem;
-  width: 50%;
-  display: inline;
+  font-size: 12rem;
+  line-height: 7rem;
+  grid-column: 3 / 12;
+  grid-row: 3 / 15;
+  justify-self: end;
+  align-self: end;
 }
 
 .kampagne a {
   color: #8bca86;
-  display: inline;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
+  line-height: 2rem;
   font-variant: small-caps;
+  grid-column: 7 / 12;
+  grid-row: 14;
+  justify-self: end;
+  align-self: end;
+}
+
+.kampagne img {
+  width: 75%;
+}
+
+.flaske1k {
+  grid-column: 2;
+  grid-row: 4 / 20;
+  transform: rotate(19deg);
+}
+
+.flaske2k {
+  grid-column: 12;
+  grid-row: 1 / 20;
+  transform: rotate(336deg);
+}
+
+.flaske3k {
+  grid-column: 19;
+  grid-row: 3 / 20;
+  transform: rotate(46deg);
+}
+
+.flaske4k {
+  grid-column: 14;
+  grid-row: 10 / 20;
+  transform: rotate(336deg);
+  justify-self: end;
+}
+
+.flaske5k {
+  grid-column: 12;
+  grid-row: 15 / 20;
+  transform: rotate(47deg);
+  align-self: end;
+}
+
+.flaske6k {
+  grid-column: 19;
+  grid-row: 16 / 20;
+  transform: rotate(328deg);
+}
+
+.flaske7k {
+  grid-column: 3;
+  grid-row: 17 / 20;
+  transform: rotate(300deg);
+}
+
+.flaske8k {
+  grid-column: 7;
+  grid-row: 1 / 20;
+  transform: rotate(60deg);
+}
+
+.flaske9k {
+  grid-column: 15;
+  grid-row: 1 / 20;
+  transform: rotate(28deg);
+}
+
+.flaske10k {
+  grid-column: 19;
+  grid-row: 9 / 20;
+  transform: rotate(28deg);
+  justify-self: end;
+}
+
+.flaske11k {
+  grid-column: 6;
+  grid-row: 15 / 20;
+  transform: rotate(314deg);
+}
+
+.daase1k {
+  grid-column: 18;
+  grid-row: 1 / 20;
+  transform: rotate(17deg);
+}
+
+.daase2k {
+  grid-column: 17;
+  grid-row: 10 / 20;
+  transform: rotate(43deg);
+  align-self: center;
+}
+
+.daase3k {
+  grid-column: 16;
+  grid-row: 6 / 20;
+  transform: rotate(338deg);
+  justify-self: end;
+}
+
+.daase4k {
+  grid-column: 14;
+  grid-row: 19 / 20;
+  transform: rotate(317deg);
+  justify-self: end;
+}
+
+.daase5k {
+  grid-column: 9;
+  grid-row: 18 / 20;
+  transform: rotate(30deg);
+  justify-self: start;
+}
+
+.daase6k {
+  grid-column: 6;
+  grid-row: 20 / 20;
+  transform: rotate(326deg);
+  align-self: start;
+}
+
+.daase7k {
+  grid-column: 2;
+  grid-row: 11 / 20;
+  transform: rotate(340deg);
+}
+
+.daase8k {
+  grid-column: 1;
+  grid-row: 16 / 20;
+  transform: rotate(37deg);
+}
+
+.daase9k {
+  grid-column: 9;
+  grid-row: 3 / 20;
+  transform: rotate(13deg);
+  justify-self: end;
+}
+
+.daase11k {
+  grid-area: 2 / 1;
+  transform: rotate(44deg);
+  align-self: center;
+}
+
+.flaske14k, .flaske15k, .flaske16k, .daase10k, .daase12k, .daase13k, .daase14k, .daase15k, .daase16k {
+  display: none;
 }
 
 /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
 
 .nyhed {
-  background-color: orange;
-  padding: 5rem;
+  margin: 0 2rem 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  text-align: center;
   width: 100%;
+  gap: 2%;
 }
 
 .nyhed h2 {
-  font-size: 20rem;
+  font-size: 24rem;
+  line-height: 11rem;
   color: #efeb5b;
+  z-index: 3;
+  align-self: center;
+}
+
+.nyhed img {
+  width: 100%;
 }
 
 /***************************************************************** TREDJE BOKS/CITAT ***************************************************************/
 
 .citat {
-  background-color: yellow;
   text-align: center;
   width: 100%;
 }
 
 .citat h2 {
-  font-size: 10rem;
-  line-height: 9rem;
+  font-size: 13rem;
+  line-height: 11rem;
 }
 
 /***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
 
 .varianter, .produktionen {
-  background-color: green;
-  width: 47%;
+  margin: 2rem 1rem 0 0;
+  width: 40%;
   text-align: center;
 }
 
+.produktionen {
+  width: 47%;
+}
+
 .varianter h2, .produktionen h2 {
-  font-size: 8rem;
+  font-size: 9rem;
+  margin: 10px;
   padding: 1rem 0;
+}
+
+.varianter img {
+  width: 28%;
+  margin: 0 10px;
 }
 
 .produktionen img {
@@ -205,8 +375,8 @@ nav ul li ul li .dropdownpunkt {
 }
 
 .historie h2 {
-  font-size: 10rem;
-  line-height: 8rem;
+  font-size: 12rem;
+  line-height: 10rem;
   grid-column: 5 / 12;
   grid-row: 4;
   justify-self: center;
@@ -214,7 +384,7 @@ nav ul li ul li .dropdownpunkt {
 }
 
 .historie picture {
-  width: 70%;
+  width: 80%;
   grid-column: 6 / 11;
   grid-row: 5;
   justify-self: center;
@@ -227,9 +397,9 @@ nav ul li ul li .dropdownpunkt {
 .historie a {
   background-color: #b1d7e1;
   color: #fffff7;
-  font-size: 1.5rem;
-  padding: 0.125rem 2rem;
-  width: 40%;
+  font-size: 3rem;
+  padding: 0.125rem 1.5rem;
+  width: 50%;
   border-radius: 15px;
   grid-column: 6 / 11;
   grid-row: 6;
@@ -241,9 +411,9 @@ nav ul li ul li .dropdownpunkt {
 #groen1f {
   width: 120%;
   transform: rotate(20deg);
-  grid-column: 15;
+  grid-column: 14;
   grid-row: 1;
-  justify-self: center;
+  justify-self: end;
 }
 
 #groen4f {
@@ -260,7 +430,6 @@ nav ul li ul li .dropdownpunkt {
   grid-row: 6 / 7;
   justify-self: end;
 }
-
 
 #groen8f {
   width: 200%;
@@ -500,15 +669,7 @@ nav ul li ul li .dropdownpunkt {
   justify-self: end;
 }
 
-.daase7 {
-  grid-area: 10 / 36;
-  transform: rotate(31deg);
-  display: none;
-}
-
-.daase8 {
-  grid-area: 9 / 39;
-  transform: rotate(354deg);
+.daase7, .daase8 {
   display: none;
 }
 
@@ -560,7 +721,7 @@ nav ul li ul li .dropdownpunkt {
 }
 
 #nyhed h1 {
-  font-size: 7rem;
+  font-size: 7.5rem;
   color: #efeb5b;
   z-index: 3;
   grid-row: 1;
@@ -638,6 +799,7 @@ nav ul li ul li .dropdownpunkt {
   gap: 0;
   position: fixed;
   width: 100%;
+  height: 100%;
   top: 50px;
   left: 0;
 }
@@ -646,17 +808,17 @@ nav ul li ul li .dropdownpunkt {
   width: 150%;
   transform: rotate(20deg);
   grid-column: 20;
-  grid-row: 13;
+  grid-row: 18;
 }
 
 #gul2 {
   width: 150%;
-  grid-column: 13;
+  grid-column: 14;
   grid-row: 5;
 }
 
 #gul3 {
-  width: 150%;
+  width: 170%;
   grid-column: 6;
   grid-row: 0;
   transform: rotate(330deg);
@@ -665,20 +827,20 @@ nav ul li ul li .dropdownpunkt {
 #gul4 {
   width: 100%;
   grid-column: 20;
-  grid-row: 10;
+  grid-row: 12;
   transform: rotate(110deg);
 }
 
 #gul5 {
   width: 250%;
-  grid-column: 9;
-  grid-row: 9;
+  grid-column: 10;
+  grid-row: 17;
   transform: rotate(90deg);
   justify-self: start;
 }
 
 #gul6 {
-  width: 200%;
+  width: 150%;
   grid-column: 1;
   grid-row: 1 / 4;
   transform: rotate(180deg);
@@ -687,7 +849,7 @@ nav ul li ul li .dropdownpunkt {
 #gul7 {
   width: 290%;
   grid-column: 17;
-  grid-row: 5;
+  grid-row: 4;
   transform: rotate(270deg);
 }
 
@@ -700,7 +862,7 @@ nav ul li ul li .dropdownpunkt {
 #gul9 {
   width: 120%;
   grid-column: 1;
-  grid-row: 7;
+  grid-row: 10;
   transform: rotate(80deg);
   justify-self: end;
 }
@@ -708,49 +870,50 @@ nav ul li ul li .dropdownpunkt {
 #gul10 {
   width: 160%;
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 5;
   transform: rotate(120deg);
 }
 
 #gul11 {
   width: 160%;
-  grid-column: 3;
-  grid-row: 6;
-  transform: rotate(300deg);
+  grid-column: 11;
+  grid-row: 11;
+  transform: rotate(280deg);
 }
 
 #gul12 {
   width: 150%;
   grid-column: 17;
-  grid-row: 12;
+  grid-row: 17;
 }
 
 #gul13 {
-  width: 200%;
+  width: 180%;
   grid-column: 2;
-  grid-row: 10 / 11;
+  grid-row: 13 / 15;
   transform: rotate(220deg);
 }
 
 #gul14 {
-  width: 300%;
+  width: 270%;
   grid-column: 1;
-  grid-row: 14;
+  grid-row: 19;
   align-self: end;
 }
 
 #gul15 {
   width: 110%;
   grid-column: 20;
-  grid-row: 8;
+  grid-row: 9;
   justify-self: end;
 }
 
 #gul16 {
-  width: 100%;
+  width: 80%;
   grid-column: 20;
   grid-row: 1;
   transform: rotate(180deg);
+  justify-self: end;
 }
 
 /*************************************************************************************************************************************/
@@ -1117,6 +1280,7 @@ footer ul li {
 footer ul li a {
   opacity: 0.6;
   color: #8bca86;
+  font-family: 'Chicle', serif;
 }
 
 footer ul li a:hover, .logo-footer:hover {
@@ -1232,115 +1396,497 @@ footer ul li a:hover, .logo-footer:hover {
 
 /********************************************************** @MEDIA TIL FORSIDE **************************************************************/
 
-/* MEDIA TIL TABLET */
-@media (max-width: 820px) {
-
-}
-/* MEDIA TIL MOBIL */
-@media (max-width: 415px) {
-  #forside {
-    display: flex;
-    justify-content: center;
-    margin: 120px 5%;
-    flex-wrap: wrap;
-    gap: 5rem 6%;
-  }
-  
-  /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
-  .kampagne {
-    background-color: red;
-    padding: 6rem 5rem 4rem;
-    width: 100%;
-  }
-  
+@media (max-width: 1440px) {  
   .kampagne h2 {
-    font-size: 5rem;
-    width: 50%;
-    display: inline;
+    font-size: 10rem;
   }
-  
+
   .kampagne a {
-    color: #8bca86;
-    display: inline;
-    font-size: 2.5rem;
-    font-variant: small-caps;
+    font-size: 2.25rem;
   }
   
   /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
   
   .nyhed {
-    background-color: orange;
-    padding: 5rem;
-    display: flex;
-    align-items: center;
-    width: 100%;
+    margin: 1.5rem 2rem 1.5rem;
   }
   
   .nyhed h2 {
-    font-size: 10rem;
-    color: #efeb5b;
+    font-size: 22rem;
   }
-  
+
   /***************************************************************** TREDJE BOKS/CITAT ***************************************************************/
   
-  .citat {
-    background-color: yellow;
-    text-align: center;
-    width: 100%;
-  }
-  
   .citat h2 {
-    font-size: 5rem;
+    font-size: 10rem;
     line-height: 9rem;
   }
   
   /***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
   
-  .varianter, .produktionen {
-    background-color: green;
-    width: 50%;
+  .varianter h2, .produktionen h2 {
+    font-size: 7rem;
+  }
+
+  /***************************************************************** SJETTE BOKS/HISTORIEN BAG ***************************************************************/
+  
+  .historie h2 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  .historie a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  .kampagne h2 {
+    font-size: 7.75rem;
+    line-height: 5rem;
+    grid-column: 4 / 13;
+    grid-row: 4 / 15;
+  }
+
+  .kampagne a {
+    font-size: 1.8rem;
+    line-height: 1.2rem;
+    grid-column: 10 / 13;
+  }
+}
+
+@media (max-width: 1024px) {
+  /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
+
+  .kampagne h2 {
+    font-size: 6.25rem;
+    line-height: 4rem;
+  }
+
+  .kampagne a {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
+
+  .nyhed h2 {
+    font-size: 13rem;
+  }
+
+  /***************************************************************** TREDJE BOKS/CITAT ***************************************************************/
+
+  .citat h2 {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+
+  /***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
+
+  .varianter h2, .produktionen h2 {
+    font-size: 4.5rem;
+  }
+
+  /***************************************************************** SJETTE BOKS/HISTORIEN BAG ***************************************************************/
+
+  .historie h2 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .historie a {
+    font-size: 1.5rem;
+    padding: 0.125rem 1rem;
+  }
+}
+
+/* MEDIA TIL TABLET */
+@media (max-width: 820px) {
+  #forside {
+    margin: 40px 8%;
+    gap: 1rem 1%;
+  }
+  
+  /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
+  .kampagne {
+    grid-template-rows: repeat(40, 5%);
+    margin-top: 100px;
+    height: 200%;
+  }
+
+  .kampagne h2 {
+    font-size: 6rem;
+    grid-column: 5 / 17;
+    grid-row: 18 / 25;
     text-align: center;
+    justify-self: center;
+  }
+
+  .kampagne a {
+    font-size: 1.75rem;
+    grid-column: 5 / 17;
+    grid-row: 26;
+    justify-self: center;
+    align-self: start;
+  }
+  
+  .flaske1k {
+    grid-column: 3;
+    grid-row: 20 / 20;
+  }
+  
+  .flaske2k {
+    grid-column: 13;
+    transform: rotate(326deg);
+  }
+  
+  .flaske3k {
+    transform: rotate(16deg);
+  }
+  
+  .flaske4k {
+    grid-column: 15;
+    grid-row: 25 / 40;
+  }
+  
+  .flaske5k {
+    grid-column: 11;
+    grid-row: 33 / 40;
+    align-self: start;
+  }
+  
+  .flaske6k {
+    grid-column: 15;
+    grid-row: 38 / 40;
+  }
+  
+  .flaske7k {
+    grid-column: 2;
+    grid-row: 33 / 40;
+  }
+  
+  .flaske8k {
+    grid-column: 8;
+    grid-row: 6 / 40;
+    transform: rotate(320deg);
+  }
+  
+  .flaske9k {
+    grid-column: 14;
+    grid-row: 9 / 40;
+    transform: rotate(348deg);
+  }
+  
+  .flaske10k {
+    grid-column: 4;
+    grid-row: 2 / 40;
+  }
+  
+  .flaske11k {
+    grid-row: 28 / 40;
+    transform: rotate(334deg);
+  }
+
+  .flaske14k {
+    grid-column: 18;
+    grid-row: 20 / 40;
+    transform: rotate(24deg);
+    align-self: start;
+    display: block;
+  }
+
+  .flaske15k {
+    grid-column: 19;
+    grid-row: 9 / 20;
+    transform: rotate(14deg);
+    align-self: center;
+    display: block;
+  }
+
+  .flaske16k {
+    grid-column: 19;
+    grid-row: 31 / 40;
+    transform: rotate(330deg);
+    align-self: center;
+    display: block;
+  }
+  
+  .daase1k {
+    grid-column: 11;
+    grid-row: 39 / 40;
+    transform: rotate(37deg);
+  }
+  
+  .daase2k {
+    grid-column: 15;
+    grid-row: 30 / 40;
+    transform: rotate(23deg);
+  }
+  
+  .daase3k {
+    grid-column: 19;
+    grid-row: 26 / 40;
+    transform: rotate(38deg);
+  }
+  
+  .daase4k {
+    grid-column: 2;
+    grid-row: 28 / 40;
+  }
+  
+  .daase5k {
+    grid-column: 10;
+    grid-row: 29 / 40;
+  }
+  
+  .daase6k {
+    grid-row: 38 / 40;
+  }
+  
+  .daase8k {
+    grid-row: 17 / 20;
+  }
+  
+  .daase9k {
+    grid-column: 11;
+    grid-row: 8 / 20;
+  }
+  
+  .daase10k {
+    grid-column: 1;
+    grid-row: 1 / 20;
+    transform: rotate(30deg);
+    display: block;
+  }
+  
+  .daase11k {
+    grid-column: 17;
+    grid-row: 9 / 40;
+    transform: rotate(351deg);
+    align-self: start;
+  }
+  
+  .daase12k {
+    grid-column: 16;
+    grid-row: 1 / 40;
+    transform: rotate(34deg);
+    align-self: start;
+    display: block;
+  }
+
+  .daase13k {
+    grid-column: 18;
+    grid-row: 39;
+    transform: rotate(344deg);
+    align-self: start;
+    display: block;
+  }
+
+  .daase14k {
+    grid-column: 1;
+    grid-row: 39;
+    transform: rotate(44deg);
+    align-self: start;
+    display: block;
+  }
+
+  .daase15k {
+    grid-column: 8;
+    grid-row: 2 / 40;
+    transform: rotate(344deg);
+    display: block;
+  }
+
+  .daase16k {
+    grid-column: 6;
+    grid-row: 10 / 40;
+    transform: rotate(44deg);
+    display: block;
+  }
+
+  /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
+  
+  .nyhed {
+    margin: 28rem 2rem 1rem;
+  }
+  /***************************************************************** TREDJE BOKS/CITAT ***************************************************************/
+  
+  .citat h2 {
+    font-size: 4rem;
+    line-height: 3.25rem;
+  }
+  
+  /***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
+  
+  .varianter h2, .produktionen h2 {
+    font-size: 3rem;
+  }
+
+  /***************************************************************** SJETTE BOKS/HISTORIEN BAG ***************************************************************/
+  
+  .historie {
+    margin-top: 3rem;
+  }
+  
+  .historie h2 {
+    font-size: 3.25rem;
+    line-height: 3rem;
+  }
+  
+  .historie picture {
+    width: 70%;
+  }
+
+  .historie a {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 570px) {
+  /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
+  .kampagne h2 {
+    font-size: 4.75rem;
+    line-height: 3.5rem;
+  }
+
+  .kampagne a {
+    font-size: 1.5rem;
+    grid-row: 25;
+  }
+
+  .flaske1k {
+    transform: rotate(19deg);
+  }
+
+  /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
+  
+  .nyhed {
+    margin: 16rem 2rem 1rem;
+  }
+  
+  .nyhed h2 {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+  
+  /***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
+
+  .varianter h2, .produktionen h2 {
+    font-size: 3rem;
+  }
+  
+  /***************************************************************** SJETTE BOKS/HISTORIEN BAG ***************************************************************/
+}
+
+@media (max-width: 450px) {
+  /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
+
+  .kampagne h2 {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
+  .kampagne a {
+    grid-row: 26;
+  }
+  
+  /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
+  
+  .nyhed {
+    margin: 18rem 2rem 1rem;
+  }
+}
+
+/* MEDIA TIL MOBIL */
+@media (max-width: 415px) {
+  #forside {
+    margin: 40px 2%;
+  }
+  
+  /***************************************************************** FØRSTE BOKS/KAMPAGNE ***************************************************************/
+  .kampagne {
+    margin-top: 80px;
+    height: 160%;
+  }
+
+  .kampagne h2 {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+  
+  .kampagne a {
+    font-size: 1.75rem;
+  }
+
+  .daase11k {
+    grid-column: 15;
+    grid-row: 8 / 40;
+  }
+
+  .daase16k {
+    grid-column: 5;
+    grid-row: 9 / 40;
+  }
+  
+  .flaske9k {
+    display: none;
+  }
+  
+  /***************************************************************** ANDEN BOKS/NYHED ***************************************************************/
+  
+  .nyhed {
+    margin-top: 105px;
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+  
+  .nyhed h2 {
+    width: 100%;
+  }
+
+  .nyhed picture {
+    width: 25%;
+  }
+  
+  /***************************************************************** TREDJE BOKS/CITAT ***************************************************************/
+
+  .citat h2 {
+    font-size: 3.75rem;
+    line-height: 3rem;
+  }
+  
+  /***************************************************************** FJERDE + FEMTE BOKST/VARIANTER + PRODUKTIONEN ***************************************************************/
+  
+  .varianter, .produktionen {
+    width: 75%;
+    margin: 0;
   }
   
   .varianter h2, .produktionen h2 {
-    font-size: 4rem;
-    padding: 1rem 0;
+    padding-bottom: 5px;
+  }
+  
+  .varianter img {
+    width: 21%;
   }
   
   .produktionen img {
-    width: 90%;
+    width: 80%;
   }
   
   /***************************************************************** SJETTE BOKS/HISTORIEN BAG ***************************************************************/
   
   .historie {
-    background-color: purple;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
   
   .historie h2 {
-    font-size: 5rem;
-    line-height: 8rem;
-  }
-  
-  .historie picture {
-    width: 30%;
-  }
-  
-  .historie img {
-    width: 100%;
+    font-size: 2.5rem;
+    line-height: 2rem;
   }
   
   .historie a {
-    background-color: #b1d7e1;
-    color: #fffff7;
-    font-size: 1.5rem;
-    padding: 0.125rem 2rem;
-    border-radius: 15px;
+    padding: 0.125rem 0.75rem;
   }
 }
 /********************************************************** @MEDIA TIL KAMPAGNE **************************************************************/
@@ -1467,7 +2013,7 @@ footer ul li a:hover, .logo-footer:hover {
     align-self: center;
   }
 
-  .flaske8, .flaske10, .flaske12, .daase8 {
+  .flaske8, .flaske10, .flaske12 {
     display: none;
   }
 }
@@ -1503,10 +2049,6 @@ footer ul li a:hover, .logo-footer:hover {
     grid-area: 13 / 15;
   }
   
-  .flaske5 {
-    grid-area: 12 / 10;
-  }
-
   .flaske9 {
     grid-area: 9 / 29;
   }
@@ -1517,18 +2059,13 @@ footer ul li a:hover, .logo-footer:hover {
   }
 
   .flaske14 {
-    grid-area: 12 / 22;
     transform: rotate(334deg);
   }
 
   .daase3 {
     grid-area: 11 / 4;
   }
-  
-  .daase4 {
-    grid-area: 12 / 16;
-  }
-  
+
   .daase6 {
     grid-area: 6 / 1;
     transform: rotate(35deg);
@@ -1552,22 +2089,16 @@ footer ul li a:hover, .logo-footer:hover {
   
   .indhold-nyhed {
     grid-template-columns: 58% 15% 15%;
-    grid-template-rows: 10% 26.5% 24% 32.5%;
-    gap: 4% 2%;
+    grid-template-rows: 15% 26.5% 24% 32.5%;
   }
   
   #nyhed h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     align-self: start;
   }
-  
-  .indhold-nyhed img {
-    width: 100%;
-  }
-  
+ 
   #tekst-nyhed p {
     font-size: 2rem;
-    padding: 10px;
   }
   
   #fremhæv {
@@ -1576,144 +2107,18 @@ footer ul li a:hover, .logo-footer:hover {
   
   #næringsindhold h3, #ingredienser h3 {
     font-size: 2rem;
-    padding-bottom: 5px;
   }
   
   #næringsindhold li, #ingredienser li {
     font-size: 1.75rem;
   }
-  /*********************************************************** BAGGRUND ***********************************************************/
-  
-  .baggrund {
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(20, 5%);
-    gap: 0;
-    position: fixed;
-    width: 100%;
-    top: 50px;
-    left: 0;
-  }
-  
-  #gul1 {
-    width: 150%;
-    transform: rotate(20deg);
-    grid-column: 20;
-    grid-row: 13;
-  }
-  
-  #gul2 {
-    width: 150%;
-    grid-column: 13;
-    grid-row: 5;
-  }
-  
-  #gul3 {
-    width: 150%;
-    grid-column: 6;
-    grid-row: 0;
-    transform: rotate(330deg);
-  }
-  
-  #gul4 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 10;
-    transform: rotate(110deg);
-  }
-  
-  #gul5 {
-    width: 250%;
-    grid-column: 9;
-    grid-row: 9;
-    transform: rotate(90deg);
-    justify-self: start;
-  }
-  
-  #gul6 {
-    width: 200%;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    transform: rotate(180deg);
-  }
-  
-  #gul7 {
-    width: 290%;
-    grid-column: 17;
-    grid-row: 5;
-    transform: rotate(270deg);
-  }
-  
-  #gul8 {
-    width: 300%;
-    grid-column: 12;
-    grid-row: 0;
-  }
-  
-  #gul9 {
-    width: 120%;
-    grid-column: 1;
-    grid-row: 7;
-    transform: rotate(80deg);
-    justify-self: end;
-  }
-  
-  #gul10 {
-    width: 160%;
-    grid-column: 2;
-    grid-row: 4;
-    transform: rotate(120deg);
-  }
-  
-  #gul11 {
-    width: 160%;
-    grid-column: 3;
-    grid-row: 6;
-    transform: rotate(300deg);
-  }
-  
-  #gul12 {
-    width: 150%;
-    grid-column: 17;
-    grid-row: 12;
-  }
-  
-  #gul13 {
-    width: 200%;
-    grid-column: 2;
-    grid-row: 10 / 11;
-    transform: rotate(220deg);
-  }
-  
-  #gul14 {
-    width: 300%;
-    grid-column: 1;
-    grid-row: 14;
-    align-self: end;
-  }
-  
-  #gul15 {
-    width: 110%;
-    grid-column: 20;
-    grid-row: 8;
-    justify-self: end;
-  }
-  
-  #gul16 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 1;
-    transform: rotate(180deg);
-  }
 }
 
 @media (max-width: 1240px) {
-  #nyhed {
-    margin: 150px 12% 160px;
-  }
   
   .indhold-nyhed {
     grid-template-columns: 54% 17% 17%;
-    grid-template-rows: 5% 22.5% 32% 32.5%;
+    grid-template-rows: 8% 22.5% 32% 32.5%;
     gap: 5% 2%;
   }
   
@@ -1721,148 +2126,70 @@ footer ul li a:hover, .logo-footer:hover {
     font-size: 5rem;
   }
   
-  .indhold-nyhed img {
-    width: 100%;
-  }
-  
-  #tekst-nyhed p {
-    font-size: 2rem;
-    padding: 10px;
-  }
-  
-  #fremhæv {
-    font-size: 2.25rem;
-  }
-  
-  #næringsindhold h3, #ingredienser h3 {
-    font-size: 2rem;
-    padding-bottom: 5px;
-  }
-  
-  #næringsindhold li, #ingredienser li {
-    font-size: 1.75rem;
-  }
   /*********************************************************** BAGGRUND ***********************************************************/
   
-  .baggrund {
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(20, 5%);
-    gap: 0;
-    position: fixed;
-    width: 100%;
-    top: 50px;
-    left: 0;
-  }
-  
-  #gul1 {
-    width: 150%;
-    transform: rotate(20deg);
-    grid-column: 20;
-    grid-row: 13;
-  }
-  
   #gul2 {
-    width: 150%;
     grid-column: 13;
-    grid-row: 5;
+    grid-row: 6;
   }
   
   #gul3 {
     width: 150%;
-    grid-column: 6;
-    grid-row: 0;
-    transform: rotate(330deg);
-  }
-  
-  #gul4 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 10;
-    transform: rotate(110deg);
+    grid-row: 2;
   }
   
   #gul5 {
-    width: 250%;
     grid-column: 9;
-    grid-row: 9;
-    transform: rotate(90deg);
-    justify-self: start;
+    grid-row: 13;
   }
   
   #gul6 {
     width: 200%;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    transform: rotate(180deg);
+    grid-row: 2 / 4;
   }
   
   #gul7 {
-    width: 290%;
-    grid-column: 17;
     grid-row: 5;
-    transform: rotate(270deg);
   }
   
   #gul8 {
-    width: 300%;
-    grid-column: 12;
-    grid-row: 0;
+    grid-row: 1;
   }
   
   #gul9 {
-    width: 120%;
-    grid-column: 1;
-    grid-row: 7;
-    transform: rotate(80deg);
-    justify-self: end;
+    grid-row: 12 / 14;
   }
   
   #gul10 {
-    width: 160%;
-    grid-column: 2;
-    grid-row: 4;
-    transform: rotate(120deg);
+    grid-row: 6;
   }
   
   #gul11 {
-    width: 160%;
     grid-column: 3;
-    grid-row: 6;
+    grid-row: 9;
     transform: rotate(300deg);
   }
   
   #gul12 {
-    width: 150%;
-    grid-column: 17;
-    grid-row: 12;
+    grid-row: 15;
   }
   
   #gul13 {
     width: 200%;
-    grid-column: 2;
-    grid-row: 10 / 11;
-    transform: rotate(220deg);
+    grid-row: 15 / 17;
   }
   
   #gul14 {
     width: 300%;
-    grid-column: 1;
-    grid-row: 14;
-    align-self: end;
+    grid-column: 5;
   }
   
   #gul15 {
-    width: 110%;
-    grid-column: 20;
     grid-row: 8;
-    justify-self: end;
   }
   
   #gul16 {
     width: 100%;
-    grid-column: 20;
-    grid-row: 1;
-    transform: rotate(180deg);
   }
 }
 
@@ -1877,194 +2204,18 @@ footer ul li a:hover, .logo-footer:hover {
   
   #nyhed h1 {
     font-size: 4rem;
-    color: #efeb5b;
-    z-index: 3;
-    grid-row: 1;
-    grid-column: 1 / 3;
-    padding: 2rem 0 0 10px;
-    text-align: left;
   }
-  
-  .indhold-nyhed img {
-    width: 100%;
-  }
-  
-  #tekst-nyhed {
-    text-align: left;
-    z-index: 3;
-    grid-row: 2 / 4;
-    grid-column: 1;
-  }
-  
+
   #tekst-nyhed p {
     font-size: 1.25rem;
-    padding: 10px;
   }
   
   #fremhæv {
     font-size: 1.5rem;
-    text-align: center;
-  }
-  
-  #daase-gul {
-    z-index: 3;
-    grid-row: 3 / 4;
-    grid-column: 2;
-    align-self: end;
-  }
-  
-  #flaske-gul {
-    z-index: 3;
-    grid-row: 1 / 4;
-    grid-column: 3;
-    align-self: end;
-  }
-  
-  #næringsindhold {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
-    grid-row: 4;
-    grid-column: 1;
-  }
-  
-  #ingredienser {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
-    grid-row: 4;
-    grid-column: 2 / 4;
-  }
-  
-  #næringsindhold h3, #ingredienser h3 {
-    font-size: 2rem;
-    padding-bottom: 5px;
   }
   
   #næringsindhold li, #ingredienser li {
     font-size: 1.25rem;
-  }
-  /*********************************************************** BAGGRUND ***********************************************************/
-  
-  .baggrund {
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(20, 5%);
-    gap: 0;
-    position: fixed;
-    width: 100%;
-    top: 50px;
-    left: 0;
-  }
-  
-  #gul1 {
-    width: 150%;
-    transform: rotate(20deg);
-    grid-column: 20;
-    grid-row: 13;
-  }
-  
-  #gul2 {
-    width: 150%;
-    grid-column: 13;
-    grid-row: 5;
-  }
-  
-  #gul3 {
-    width: 150%;
-    grid-column: 6;
-    grid-row: 0;
-    transform: rotate(330deg);
-  }
-  
-  #gul4 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 10;
-    transform: rotate(110deg);
-  }
-  
-  #gul5 {
-    width: 250%;
-    grid-column: 9;
-    grid-row: 9;
-    transform: rotate(90deg);
-    justify-self: start;
-  }
-  
-  #gul6 {
-    width: 200%;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    transform: rotate(180deg);
-  }
-  
-  #gul7 {
-    width: 290%;
-    grid-column: 17;
-    grid-row: 5;
-    transform: rotate(270deg);
-  }
-  
-  #gul8 {
-    width: 300%;
-    grid-column: 12;
-    grid-row: 0;
-  }
-  
-  #gul9 {
-    width: 120%;
-    grid-column: 1;
-    grid-row: 7;
-    transform: rotate(80deg);
-    justify-self: end;
-  }
-  
-  #gul10 {
-    width: 160%;
-    grid-column: 2;
-    grid-row: 4;
-    transform: rotate(120deg);
-  }
-  
-  #gul11 {
-    width: 160%;
-    grid-column: 3;
-    grid-row: 6;
-    transform: rotate(300deg);
-  }
-  
-  #gul12 {
-    width: 150%;
-    grid-column: 17;
-    grid-row: 12;
-  }
-  
-  #gul13 {
-    width: 200%;
-    grid-column: 2;
-    grid-row: 10 / 11;
-    transform: rotate(220deg);
-  }
-  
-  #gul14 {
-    width: 300%;
-    grid-column: 1;
-    grid-row: 14;
-    align-self: end;
-  }
-  
-  #gul15 {
-    width: 110%;
-    grid-column: 20;
-    grid-row: 8;
-    justify-self: end;
-  }
-  
-  #gul16 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 1;
-    transform: rotate(180deg);
   }
 }
 
@@ -2072,25 +2223,17 @@ footer ul li a:hover, .logo-footer:hover {
 @media (max-width: 820px) {
   #nyhed {
     margin: 120px 2% 160px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
   
   .indhold-nyhed {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 15% 16% 25% 25% 25%;
+    grid-template-columns: 20% 10% 10% 20%;
+    grid-template-rows: 15% 10% 22% 25% 25%;
     gap: 2% 2%;
   }
   
   #nyhed h1 {
     font-size: 6rem;
-    color: #efeb5b;
-    z-index: 3;
-    grid-row: 1;
     grid-column: 1 / 5;
-    padding: 2rem 0 0 10px;
     text-align: center;
   }
   
@@ -2099,55 +2242,36 @@ footer ul li a:hover, .logo-footer:hover {
   }
   
   #tekst-nyhed {
-    text-align: left;
-    z-index: 3;
     grid-row: 4;
     grid-column: 1 / 5;
   }
   
   #tekst-nyhed p {
     font-size: 1.5rem;
-    padding: 10px;
-  }
-  
-  #fremhæv {
-    font-size: .5rem;
-    text-align: center;
   }
   
   #daase-gul {
-    z-index: 3;
     grid-row: 2 / 4;
     grid-column: 1 / 3;
-    align-self: end;
   }
   
   #flaske-gul {
-    z-index: 3;
     grid-row: 2 / 4;
     grid-column: 3 / 5;
-    align-self: end;
   }
   
   #næringsindhold {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
     grid-row: 5;
     grid-column: 1 / 3;
   }
   
   #ingredienser {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
     grid-row: 5;
     grid-column: 3 / 5;
   }
   
   #næringsindhold h3, #ingredienser h3 {
     font-size: 1.8rem;
-    padding-bottom: 5px;
   }
   
   #næringsindhold li, #ingredienser li {
@@ -2155,337 +2279,116 @@ footer ul li a:hover, .logo-footer:hover {
   }
   /*********************************************************** BAGGRUND ***********************************************************/
   
-  .baggrund {
-    display: grid;
-    z-index: 1;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(20, 5%);
-    gap: 0;
-    position: fixed;
-    width: 100%;
-    top: 50px;
-    left: 0;
-  }
-  
   #gul1 {
-    width: 150%;
-    transform: rotate(20deg);
-    grid-column: 20;
-    grid-row: 13;
+    width: 200%;
+    grid-column: 10;
+    grid-row: 2;
   }
   
   #gul2 {
-    width: 150%;
-    grid-column: 13;
-    grid-row: 5;
+    grid-column: 9;
+    grid-row: 8;
   }
   
   #gul3 {
-    width: 150%;
-    grid-column: 6;
     grid-row: 0;
-    transform: rotate(330deg);
   }
   
   #gul4 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 10;
-    transform: rotate(110deg);
+    width: 130%;
+    grid-column: 10;
+    grid-row: 18;
   }
   
   #gul5 {
-    width: 250%;
-    grid-column: 9;
-    grid-row: 9;
-    transform: rotate(90deg);
-    justify-self: start;
-  }
-  
-  #gul6 {
-    width: 200%;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    transform: rotate(180deg);
-  }
-  
-  #gul7 {
-    width: 290%;
-    grid-column: 17;
-    grid-row: 5;
-    transform: rotate(270deg);
-  }
-  
-  #gul8 {
-    width: 300%;
-    grid-column: 12;
-    grid-row: 0;
-  }
-  
-  #gul9 {
-    width: 120%;
-    grid-column: 1;
+    grid-column: 4;
     grid-row: 7;
-    transform: rotate(80deg);
-    justify-self: end;
-  }
-  
-  #gul10 {
-    width: 160%;
-    grid-column: 2;
-    grid-row: 4;
     transform: rotate(120deg);
   }
   
-  #gul11 {
-    width: 160%;
-    grid-column: 3;
-    grid-row: 6;
-    transform: rotate(300deg);
-  }
-  
-  #gul12 {
-    width: 150%;
-    grid-column: 17;
-    grid-row: 12;
-  }
-  
-  #gul13 {
-    width: 200%;
-    grid-column: 2;
-    grid-row: 10 / 11;
-    transform: rotate(220deg);
-  }
-  
-  #gul14 {
-    width: 300%;
+  #gul6 {
+    width: 180%;
     grid-column: 1;
-    grid-row: 14;
-    align-self: end;
+    grid-row: 1 / 3;
   }
   
-  #gul15 {
-    width: 110%;
-    grid-column: 20;
-    grid-row: 8;
-    justify-self: end;
+  #gul9 {
+    width: 150%;
+    grid-column: 2;
+    grid-row: 9;
   }
   
-  #gul16 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 1;
-    transform: rotate(180deg);
+  #gul10 {
+    grid-row: 5;
+  }
+
+  #gul13 {
+    width: 160%;
+    grid-column: 1;
+    grid-row: 15;
+    transform: rotate(310deg);
+  }
+  
+  #gul7, #gul8, #gul11, #gul12, #gul14, #gul15, #gul16 {
+    display: none;
   }
 }
 
 @media (max-width: 640px) {
   #nyhed {
     margin: 120px 2% 100px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
   
   .indhold-nyhed {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: 10% 15% 25% 29% 22%;
-    gap: 2% 2%;
   }
   
   #nyhed h1 {
     font-size: 4rem;
-    color: #efeb5b;
-    z-index: 3;
-    grid-row: 1;
-    grid-column: 1 / 5;
-    padding: 2rem 0 0 10px;
-    text-align: center;
   }
   
   .indhold-nyhed img {
     width: 75%;
   }
-  
-  #tekst-nyhed {
-    text-align: left;
-    z-index: 3;
-    grid-row: 4;
-    grid-column: 1 / 5;
-  }
-  
-  #tekst-nyhed p {
-    font-size: 1.5rem;
-    padding: 10px;
-  }
-  
-  #fremhæv {
-    font-size: .5rem;
-    text-align: center;
-  }
-  
-  #daase-gul {
-    z-index: 3;
-    grid-row: 2 / 4;
-    grid-column: 1 / 3;
-    align-self: end;
-  }
-  
-  #flaske-gul {
-    z-index: 3;
-    grid-row: 2 / 4;
-    grid-column: 3 / 5;
-    align-self: end;
-  }
-  
-  #næringsindhold {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
-    grid-row: 5;
-    grid-column: 1 / 3;
-  }
-  
-  #ingredienser {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
-    grid-row: 5;
-    grid-column: 3 / 5;
-  }
-  
+
   #næringsindhold h3, #ingredienser h3 {
     font-size: 1.5rem;
-    padding-bottom: 5px;
   }
   
   #næringsindhold li, #ingredienser li {
     font-size: 1.25rem;
   }
-  /*********************************************************** BAGGRUND ***********************************************************/
-  
-  .baggrund {
-    display: grid;
-    z-index: 1;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(20, 5%);
-    gap: 0;
-    position: fixed;
-    width: 100%;
-    top: 50px;
-    left: 0;
+}
+
+@media (max-width: 570px) {
+  .indhold-nyhed {
+    grid-template-columns: 20% 5% 5% 20%;
+    grid-template-rows: 10% 10% 20% 29% 22%;
   }
-  
-  #gul1 {
-    width: 150%;
-    transform: rotate(20deg);
-    grid-column: 20;
-    grid-row: 13;
+}
+
+
+@media (max-width: 500px) {
+  .indhold-nyhed {
+    grid-template-rows: 10% 12% 15% 29% 22%;
   }
-  
-  #gul2 {
-    width: 150%;
-    grid-column: 13;
-    grid-row: 5;
+}
+
+@media (max-width: 480px) {
+  .indhold-nyhed {
+    grid-template-rows: 10% 10% 15% 29% 22%;
   }
-  
-  #gul3 {
-    width: 150%;
-    grid-column: 6;
-    grid-row: 0;
-    transform: rotate(330deg);
+}
+
+@media (max-width: 450px) {
+  .indhold-nyhed {
+    grid-template-rows: 9% 10% 13% 29% 22%;
   }
-  
-  #gul4 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 10;
-    transform: rotate(110deg);
-  }
-  
-  #gul5 {
-    width: 250%;
-    grid-column: 9;
-    grid-row: 9;
-    transform: rotate(90deg);
-    justify-self: start;
-  }
-  
-  #gul6 {
-    width: 200%;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    transform: rotate(180deg);
-  }
-  
-  #gul7 {
-    width: 290%;
-    grid-column: 17;
-    grid-row: 5;
-    transform: rotate(270deg);
-  }
-  
-  #gul8 {
-    width: 300%;
-    grid-column: 12;
-    grid-row: 0;
-  }
-  
-  #gul9 {
-    width: 120%;
-    grid-column: 1;
-    grid-row: 7;
-    transform: rotate(80deg);
-    justify-self: end;
-  }
-  
-  #gul10 {
-    width: 160%;
-    grid-column: 2;
-    grid-row: 4;
-    transform: rotate(120deg);
-  }
-  
-  #gul11 {
-    width: 160%;
-    grid-column: 3;
-    grid-row: 6;
-    transform: rotate(300deg);
-  }
-  
-  #gul12 {
-    width: 150%;
-    grid-column: 17;
-    grid-row: 12;
-  }
-  
-  #gul13 {
-    width: 200%;
-    grid-column: 2;
-    grid-row: 10 / 11;
-    transform: rotate(220deg);
-  }
-  
-  #gul14 {
-    width: 300%;
-    grid-column: 1;
-    grid-row: 14;
-    align-self: end;
-  }
-  
-  #gul15 {
-    width: 110%;
-    grid-column: 20;
-    grid-row: 8;
-    justify-self: end;
-  }
-  
-  #gul16 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 1;
-    transform: rotate(180deg);
+}
+
+@media (max-width: 425px) {
+  .indhold-nyhed {
+    grid-template-rows: 9% 8% 12% 29% 22%;
   }
 }
 
@@ -2493,26 +2396,16 @@ footer ul li a:hover, .logo-footer:hover {
 @media (max-width: 415px) {
   #nyhed {
     margin: 80px 0 50px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
   
   .indhold-nyhed {
-    display: grid;
     grid-template-columns: 20% 10% 10% 20%;
-    grid-template-rows: 10% 15% 25% 32% 25%;
+    grid-template-rows: 10% 17% 25% 32% 25%;
     gap: 2% 6%;
   }
   
   #nyhed h1 {
     font-size: 3rem;
-    color: #efeb5b;
-    z-index: 3;
-    grid-row: 1;
-    grid-column: 1 / 5;
-    padding: 2rem 0 0 10px;
-    text-align: center;
   }
   
   .indhold-nyhed img {
@@ -2520,56 +2413,20 @@ footer ul li a:hover, .logo-footer:hover {
     margin: 0 5px;
   }
   
-  #tekst-nyhed {
-    text-align: left;
-    z-index: 3;
-    grid-row: 4;
-    grid-column: 1 / 5;
-  }
-  
   #tekst-nyhed p {
     font-size: 1rem;
-    padding: 10px;
-  }
-  
-  #fremhæv {
-    font-size: .5rem;
-    text-align: center;
   }
   
   #daase-gul {
-    z-index: 3;
-    grid-row: 2 / 4;
     grid-column: 1 / 4;
-    align-self: end;
   }
   
   #flaske-gul {
-    z-index: 3;
-    grid-row: 2 / 4;
     grid-column: 2 / 5;
-    align-self: end;
-  }
-  
-  #næringsindhold {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
-    grid-row: 5;
-    grid-column: 1 / 3;
-  }
-  
-  #ingredienser {
-    list-style: none;
-    text-align: left;
-    z-index: 3;
-    grid-row: 5;
-    grid-column: 3 / 5;
   }
   
   #næringsindhold h3, #ingredienser h3 {
     font-size: 1rem;
-    padding-bottom: 5px;
   }
   
   #næringsindhold li, #ingredienser li {
@@ -2577,130 +2434,40 @@ footer ul li a:hover, .logo-footer:hover {
   }
   /*********************************************************** BAGGRUND ***********************************************************/
   
-  .baggrund {
-    display: grid;
-    z-index: 1;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(20, 5%);
-    gap: 0;
-    position: fixed;
-    width: 100%;
-    top: 50px;
-    left: 0;
-  }
-  
   #gul1 {
-    width: 150%;
-    transform: rotate(20deg);
-    grid-column: 20;
-    grid-row: 13;
-  }
-  
-  #gul2 {
-    width: 150%;
-    grid-column: 13;
-    grid-row: 5;
+    grid-row: 3;
   }
   
   #gul3 {
-    width: 150%;
-    grid-column: 6;
-    grid-row: 0;
-    transform: rotate(330deg);
+    display: none;
   }
   
   #gul4 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 10;
-    transform: rotate(110deg);
-  }
-  
-  #gul5 {
-    width: 250%;
-    grid-column: 9;
-    grid-row: 9;
-    transform: rotate(90deg);
-    justify-self: start;
-  }
-  
-  #gul6 {
-    width: 200%;
-    grid-column: 1;
-    grid-row: 1 / 4;
-    transform: rotate(180deg);
-  }
-  
-  #gul7 {
-    width: 290%;
-    grid-column: 17;
-    grid-row: 5;
-    transform: rotate(270deg);
-  }
-  
-  #gul8 {
-    width: 300%;
-    grid-column: 12;
-    grid-row: 0;
-  }
-  
-  #gul9 {
-    width: 120%;
-    grid-column: 1;
-    grid-row: 7;
-    transform: rotate(80deg);
-    justify-self: end;
-  }
-  
-  #gul10 {
-    width: 160%;
-    grid-column: 2;
-    grid-row: 4;
-    transform: rotate(120deg);
-  }
-  
-  #gul11 {
-    width: 160%;
-    grid-column: 3;
-    grid-row: 6;
-    transform: rotate(300deg);
-  }
-  
-  #gul12 {
-    width: 150%;
-    grid-column: 17;
     grid-row: 12;
   }
   
-  #gul13 {
-    width: 200%;
-    grid-column: 2;
-    grid-row: 10 / 11;
-    transform: rotate(220deg);
+  #gul5 {
+    grid-column: 3;
+    grid-row: 6;
+  }
+
+  #gul7 {
+    grid-column: 9;
+    grid-row: 18;
+    display: block;
   }
   
-  #gul14 {
-    width: 300%;
-    grid-column: 1;
-    grid-row: 14;
-    align-self: end;
-  }
-  
-  #gul15 {
-    width: 110%;
-    grid-column: 20;
-    grid-row: 8;
-    justify-self: end;
-  }
-  
-  #gul16 {
-    width: 100%;
-    grid-column: 20;
-    grid-row: 1;
-    transform: rotate(180deg);
+  #gul10 {
+    grid-row: 4;
   }
 }
 
+@media (max-width: 345px) {
+  .indhold-nyhed {
+    grid-template-rows: 10% 12% 22% 32% 25%;
+    gap: 2% 6%;
+  }
+}
 /********************************************************** @MEDIA TIL PRODUKTION **************************************************************/
 
 /* MEDIA TIL TABLET */
@@ -2822,14 +2589,9 @@ footer ul li a:hover, .logo-footer:hover {
     font-size: 2rem;
     padding: 5px;
   }
-  
-  #vision p, #mission p {
-    font-size: 2rem;
-  }
 
   .baggrund {
     grid-template-columns: repeat(10, 10%);
-    position: fixed;
   }
 
   #groen1 {
@@ -2862,7 +2624,6 @@ footer ul li a:hover, .logo-footer:hover {
   #groen8 {
     width: 230%;
     grid-column: 7;
-    grid-row: 0;
     transform: scaleX(-1);
   }
   
@@ -2942,10 +2703,6 @@ footer ul li a:hover, .logo-footer:hover {
   #vision p, #mission p {
     font-size: 1rem;
   }
-  
-  #groen12 {
-    grid-column: 6;
-  }
 }
 
 /********************************************************** @MEDIA TIL VARIANTER **************************************************************/
@@ -2972,10 +2729,6 @@ footer ul li a:hover, .logo-footer:hover {
   .baggrund-varianter {
     height: 410px;
   }
-
-  #gul4v {
-    display: none;
-  }
   
   #gul10v {
     grid-column: 4;
@@ -2986,7 +2739,7 @@ footer ul li a:hover, .logo-footer:hover {
     justify-self: end;
   }
   
-  #gul15v {
+  #gul4v, #gul15v {
     display: none;
   }
 
@@ -3019,8 +2772,6 @@ footer ul li a:hover, .logo-footer:hover {
   
   #gul16v {
     width: 40%;
-    grid-column: 1;
-    grid-row: 1;
   }
 
   .øl h2 {
@@ -3060,21 +2811,15 @@ footer ul li a:hover, .logo-footer:hover {
     height: 155px;
     top: 120px;
   }
-
-  #gul4v {
-    display: none;
-  }
   
   #gul9v {
     width: 90%;
-    grid-column: 5;
     transform: rotate(5deg);
   }
   
   #gul10v {
     grid-column: 7;
     grid-row: 9;
-    justify-self: start;
     align-self: end;
   }
   
@@ -3086,7 +2831,6 @@ footer ul li a:hover, .logo-footer:hover {
   #gul14v {
     width: 100%;
     grid-column: 4;
-    justify-self: end;
   }
   
   #gul15v {
@@ -3117,75 +2861,41 @@ footer ul li a:hover, .logo-footer:hover {
     padding-left: 1.5rem;
   }
   
-  .øl-nyhed img {
-    width: 130px;
-  }
-
-  #gul4v {
-    width: 45%;
-    grid-column: 10;
-    grid-row: 7;
-    justify-self: end;
-    display: none;
-  }
-  
   #gul9v {
     width: 110%;
     grid-column: 4;
     grid-row: 1;
-    transform: rotate(5deg);
   }
   
   #gul10v {
-    width: 100%;
     grid-column: 5;
-    grid-row: 9;
     transform: rotate(335deg);
-    justify-self: start;
   }
   
   #gul12v {
     width: 100%;
     grid-column: 1;
-    grid-row: 1;
     transform: rotate(120deg);
   }
   
   #gul13v {
     width: 130%;
     grid-column: 6;
-    grid-row: 2;
     transform: rotate(180deg);
   }
   
   #gul14v {
     width: 110%;
     grid-column: 3;
-    grid-row: 10;
     align-self: end;
-    justify-self: end;
-  }
-  
-  #gul15v {
-    width: 67%;
-    grid-column: 10;
-    grid-row: 1;
-    justify-self: end;
-    display: block;
   }
   
   #gul16v {
-    width: 50%;
-    grid-column: 1;
-    grid-row: 1;
     display: none;
   }
   
   #gul17v {
     width: 140%;
-    grid-column: 1;
-    grid-row: 10;
-    align-self: end;
   }
 
   .øl h2 {
@@ -3216,8 +2926,6 @@ footer ul li a:hover, .logo-footer:hover {
   }
 
   .øl-nyhed {
-    display: flex;
-    align-items: end;
     gap: 0 10px;
     height: 185px;
     justify-content: flex-end;
@@ -3225,11 +2933,9 @@ footer ul li a:hover, .logo-footer:hover {
 
   .øl-nyhed img {
     width: 40px;
-    margin-bottom: -5px;
   }
 
   .baggrund-varianter {
-    gap: 0;
     width: 92%;
     height: 185px;
     top: 110px;
@@ -3238,17 +2944,10 @@ footer ul li a:hover, .logo-footer:hover {
 
   #gul4v {
     width: 70%;
-    grid-column: 10;
-    grid-row: 1;
-    justify-self: end;
     display: block;
   }
 
   #gul9v {
-    width: 90%;
-    grid-column: 5;
-    grid-row: 1;
-    transform: rotate(5deg);
     display: none;
   }
 
@@ -3257,13 +2956,10 @@ footer ul li a:hover, .logo-footer:hover {
     grid-column: 3;
     grid-row: 7;
     transform: rotate(120deg);
-    justify-self: start;
-    align-self: end;
   }
 
   #gul12v {
     width: 120%;
-    grid-column: 1;
     grid-row: 3;
     transform: rotate(90deg);
     justify-self: start;
@@ -3281,30 +2977,19 @@ footer ul li a:hover, .logo-footer:hover {
   #gul14v {
     width: 200%;
     grid-column: 9;
-    grid-row: 10;
-    align-self: end;
-    justify-self: end;
   }
 
   #gul15v {
     width: 120%;
-    grid-column: 10;
     grid-row: 6;
-    justify-self: end;
-    display: block;
   }
 
   #gul16v {
-    width: 30%;
-    grid-column: 1;
     grid-row: 2;
   }
 
   #gul17v {
     width: 200%;
-    grid-column: 1;
-    grid-row: 10;
-    align-self: end;
   }
 
   .øl {
