@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrøjborgBryg • Forside</title>
+    <title>Pilsner Citrus • TrøjborgBryg</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,24 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
-    <link rel="icon" href="img/logo/favicon.webp">
+    <link rel="icon" href="img/logo/favicon.png">
 
     <meta name="geo.region" content="DK-82">
     <meta name="geo.placename" content="Midtjylland">
     <meta name="geo.position" content="56.223769;10.123814">
     <meta name="ICBM" content="56.223769, 10.123814">
     <meta name="author" content="Andrea Skadhede">
-    <meta name="description" content="">
+    <meta name="description" content="Se vores seneste nyhed hos TrøjborgBryg. Vores nye pilsner version, med et lille tvist, er lige noget for dig, der kan lide en øl, men også gerne vil have noget friskt.">
 
 </head>
 <body>
     <header>
         <nav>
+            <!-- logo -->
             <a class="logo-nav-a" href="index.html">
                 <picture>
                     <source class="logo-nav" media="(min-width: 821px)" srcset="img/logo/troejborgbryg.webp">
-                    <source class="logo-nav" media="(min-width: 416px) and (max-width: 820px)" srcset="img/logo/troejborgbryg-mellem.webp">
-                    <source class="logo-nav" media="(max-width: 415px)" srcset="img/logo/troejborgbryg-lav.webp">
+                    <source class="logo-nav" media="(min-width: 426px) and (max-width: 820px)" srcset="img/logo/troejborgbryg-mellem.webp">
+                    <source class="logo-nav" media="(max-width: 425px)" srcset="img/logo/troejborgbryg-lav.webp">
                     <img class="logo-nav" src="img/logo/png/troejborgbryg.png" alt="TrøjborgBryg logo">
                 </picture>
             </a>
@@ -38,7 +39,7 @@
               <i class="fa fa-bars"></i>
             </label>
 
-            
+            <!-- navigationsbar -->
             <ul id="menu">
                 <li><a href="kampagne.html">Kampagne</a></li>
                 <li><a href="varianter.html">Varianter</a></li>
@@ -56,6 +57,7 @@
 
     <main id="nyhed">
         <div class="indhold-nyhed">
+            <!-- overskrift + tekst -->
             <h1>Prøv vores nyeste smag</h1>
             <div id="tekst-nyhed">
                 <p>Introduktionen af vores nyeste sensation, en variant af den velkendte og elskede øl TrøjborgBryg Pilsner, præsenterer nu sin spændende søster med en forfriskende frugtagtig twist! Selvfølgelig stadig alkoholfri.</p>
@@ -63,16 +65,23 @@
                 <p>Hvis du sætter pris på det sødere og mere livlige i din øl, er denne nye bryg lige noget for dig!</p>
             </div>
     
-            <figure id="daase-gul">
-                <source>
-                <img src="img/baggrund/png/daase-gul.png" alt="">
-            </figure>
+            <!-- pilsner citrus daase -->
+            <picture id="daase-gul">
+                <source media="(min-width: 821px)" srcset="img/baggrund/gul/daase.webp">
+                <source media="(min-width: 426px) and (max-width: 820px)" srcset="img/baggrund/gul/daase-mellem.webp">
+                <source media="(max-width: 425px)" srcset="img/baggrund/gul/daase-lav.webp">
+                <img src="img/baggrund/png/daase-gul.png" alt="gul dåse">
+            </picture>
 
-            <figure id="flaske-gul">
-                <source>
-                <img src="img/baggrund/png/flaske-gul.png" alt="">
-            </figure>
-    
+            <!-- pilsner citrus flaske -->
+            <picture id="flaske-gul">
+                <source media="(min-width: 821px)" srcset="img/baggrund/gul/flaske.webp">
+                <source media="(min-width: 426px) and (max-width: 820px)" srcset="img/baggrund/gul/flaske-mellem.webp">
+                <source media="(max-width: 425px)" srcset="img/baggrund/gul/flaske-lav.webp">
+                <img src="img/baggrund/png/flaske-gul.png" alt="gul flaske">
+            </picture>
+
+            <!-- næringsindholdsliste -->
             <section id="næringsindhold">
                 <h3>Næringsindhold pr. 100 ml:</h3>
                 <ul>
@@ -86,6 +95,7 @@
                 </ul>
             </section>
 
+            <!-- ingrediensliste -->
             <section id="ingredienser">
                 <h3>Ingredienser:</h3>
                 <ul>
@@ -98,6 +108,7 @@
             </section>
         </div>
 
+        <!-- gule baggrunds figure -->
         <div class="baggrund">
             <img id="gul1" src="img/baggrund/gul/gul1.webp" alt="">
             <img id="gul2" src="img/baggrund/gul/gul2.webp" alt="">
@@ -121,17 +132,19 @@
     </main>
 
     <footer>
+        <!-- footer menu -->
         <ul id="links-footer">
             <li><a href="#">Øl</a></li>
             <li><a href="#">Kontakt</a></li>
             <li><a href="#">Find os</a></li>
         </ul>
 
+        <!-- footer logo -->
         <a href="index.html">
             <picture>
                 <source class="logo-footer" media="(min-width: 821px)" srcset="img/logo/troejborgbryg.webp">
-                <source class="logo-footer" media="(min-width: 416px) and (max-width: 820px)" srcset="img/logo/troejborgbryg-mellem.webp">
-                <source class="logo-footer" media="(max-width: 415px)" srcset="img/logo/troejborgbryg-lav.webp">
+                <source class="logo-footer" media="(min-width: 426px) and (max-width: 820px)" srcset="img/logo/troejborgbryg-mellem.webp">
+                <source class="logo-footer" media="(max-width: 425px)" srcset="img/logo/troejborgbryg-lav.webp">
                 <img class="logo-footer" src="img/logo/png/troejborgbryg.png" alt="TrøjborgBryg logo">
             </picture>
         </a>
