@@ -377,7 +377,7 @@ nav ul li ul li .dropdownpunkt {
   font-size: 12rem;
   line-height: 10rem;
   grid-column: 5 / 12;
-  grid-row: 3 / 5;
+  grid-row: 2 / 4;
   justify-self: center;
   align-self: end;
   text-align: center;
@@ -386,7 +386,7 @@ nav ul li ul li .dropdownpunkt {
 .historie picture {
   width: 80%;
   grid-column: 6 / 11;
-  grid-row: 5 / 8;
+  grid-row: 4 / 7;
   justify-self: center;
   align-self: start;
 
@@ -403,7 +403,7 @@ nav ul li ul li .dropdownpunkt {
   padding: 0.125rem 1.5rem;
   border-radius: 15px;
   grid-column: 6 / 11;
-  grid-row: 6;
+  grid-row: 5;
   justify-self: center;
   align-self: start;
   text-align: center;
@@ -732,8 +732,16 @@ nav ul li ul li .dropdownpunkt {
   text-align: left;
 }
 
+#nyhed #pilsnerh1 {
+  color: #8bca86;
+}
+
 .indhold-nyhed img {
   width: 100%;
+}
+
+#daase-gul {
+  margin-bottom: 5px;
 }
 
 #tekst-nyhed {
@@ -919,6 +927,13 @@ nav ul li ul li .dropdownpunkt {
   grid-row: 1;
   transform: rotate(180deg);
   justify-self: end;
+}
+
+/*************************************************************************************************************************************/
+/*************************************************************** NYHED ***************************************************************/
+/*************************************************************************************************************************************/
+#nyhed #pilsnerh1 {
+  color: #8bca86;
 }
 
 /*************************************************************************************************************************************/
@@ -1982,7 +1997,7 @@ footer ul li a:hover, .logo-footer:hover {
   }
 
   .historie picture {
-    width: 70%;
+    width: 90%;
   }
 
   .historie a {
@@ -2130,9 +2145,7 @@ footer ul li a:hover, .logo-footer:hover {
     text-align: center;
   }
 
-  .indhold-nyhed img {
-    width: 50%;
-  }
+
 
   #tekst-nyhed {
     grid-row: 4;
@@ -2443,10 +2456,7 @@ footer ul li a:hover, .logo-footer:hover {
     font-size: 5rem;
   }
   
-  .indhold-nyhed img {
-    width: 75%;
-  }
-  
+ 
   #næringsindhold h3, #ingredienser h3 {
     font-size: 1.5rem;
   }
@@ -2572,7 +2582,7 @@ footer ul li a:hover, .logo-footer:hover {
 
   /************************************************************* NYHED **************************************************************/
   .indhold-nyhed {
-    grid-template-rows: 9% 10% 25% 29% 22%;
+    grid-template-rows: 9% 12% 25% 29% 22%;
   }
 }
 
@@ -2826,7 +2836,7 @@ footer ul li a:hover, .logo-footer:hover {
   }
 
   .indhold-nyhed {
-    grid-template-rows: 10% 9% 20% 35% 18% 18%;
+    grid-template-rows: 10% 14% 20% 35% 18% 18%;
     gap: 2% 0;
   }
 
@@ -2836,7 +2846,7 @@ footer ul li a:hover, .logo-footer:hover {
   }
 
   .indhold-nyhed img {
-    width: 50%;
+    width: 75%;
   }
 
   #tekst-nyhed p {
@@ -3037,7 +3047,7 @@ footer ul li a:hover, .logo-footer:hover {
 
   /************************************************************ NYHED ***************************************************************/
   .indhold-nyhed {
-    grid-template-rows: 10% 9% 15% 40% 18% 13%;
+    grid-template-rows: 10% 13% 15% 40% 18% 13%;
     gap: 2% 6%;
   }
 }
