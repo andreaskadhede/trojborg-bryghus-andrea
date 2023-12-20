@@ -2535,6 +2535,16 @@ footer ul li a:hover, .logo-footer:hover {
 
 @media (max-width: 570px) {
 
+  nav ul li a, .a {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-right: 20px;
+  }
+
+  nav ul li ul li .dropdownpunkt {
+    font-size: 1.2rem;
+  }
+
   /************************************************************* FORSIDE *************************************************************/
   #forside {
     gap: 3rem 1%;
@@ -2648,6 +2658,11 @@ footer ul li a:hover, .logo-footer:hover {
   
   nav ul {
     margin-right: 30px;
+    width: 40%;
+  }
+
+  #check:checked ~ #menu {
+    left: 60%;
   }
   
   /* Style the logo */
@@ -2661,6 +2676,16 @@ footer ul li a:hover, .logo-footer:hover {
 
   #menu {
     margin-top: -5px;
+  }
+
+  nav ul li a, .a {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-right: 20px;
+  }
+
+  nav ul li ul li .dropdownpunkt {
+    font-size: 1rem;
   }
   
   /* styling the label checkbtn class */
